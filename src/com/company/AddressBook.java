@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class AddressBook {
 
@@ -68,6 +69,19 @@ public class AddressBook {
 
         }
 
+    }
+
+
+
+    public String wouldYouLikeToContinue(){
+        Scanner scan = new Scanner (System.in);
+
+        System.out.println("Would you like to continue? type yes or no?");
+
+
+        String userContinue = scan.nextLine();
+
+        return userContinue;
     }
 
 
